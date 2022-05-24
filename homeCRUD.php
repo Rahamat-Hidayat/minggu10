@@ -12,7 +12,6 @@
                 <th>ID</th>
                 <th>Nama</th>
                 <th>Alamat</th>
-                <th>Foto</th>
                 <th>Aksi</th>
             </tr>
             <?php
@@ -28,7 +27,6 @@
                 <td><?php echo $row["id"];?></td>
                 <td><?php echo $row["name"];?></td>
                 <td><?php echo $row["address"];?></td>
-                <td><img src="Gambar/<?php echo $row["foto"];?>" ></td>
                 <td>
                     <a href="editForm.php?id=<?php echo $row["id"];?>">
                     <button>Edit</button></a>

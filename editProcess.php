@@ -3,15 +3,12 @@
 
     $name = $_POST["myname"];
     $address = $_POST["myaddress"];
-    $gambar = $_FILES['myfoto']['name'];
-    $tempSementara = $_FILES['myfoto']['tmp_name'];
 
-    $lokasiUpload = "Gambar/";
 
-    move_uploaded_file($tempSementara, $lokasiUpload . $gambar);
+    move_uploaded_file($tempSementara, $lokasiUpload);
 
-    $query = "INSERT INTO student(name, address, foto)
-        VALUE('$name','$address', '$gambar')";
+    $query = "INSERT INTO student(name, address)
+        VALUE('$name','$address')";
 
     if(mysqli_query($connect, $query)){
         header('Location:homeCRUD.php');

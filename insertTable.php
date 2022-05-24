@@ -13,9 +13,9 @@
     }
 
     $query = "INSERT into student (name, address)
-                VALUES ('Rhmat', 'Malang'),
-                ('Risqi Z', 'kediri'),
-                ('Risqi H', 'trenggalek')";
+                VALUES ('Rahmat', 'Malang'),
+                ('Febry', 'NTB'),
+                ('Fadly', 'Padang')";
 
     if (mysqli_query($connect, $query)) {
         echo "Data baru berhasil dibuat";
